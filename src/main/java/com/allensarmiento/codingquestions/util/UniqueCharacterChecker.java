@@ -5,9 +5,12 @@ import java.text.StringCharacterIterator;
 import java.util.HashMap;
 import java.util.Map;
 
+// Implement an algorithm to determine if a string has all unique characters.
+//
+// If cannot use additional data structures, probably use a nested for loop to check for a duplicate?
 public class UniqueCharacterChecker {
     public static boolean doesStringContainAllUniqueCharacters(String str) {
-        Map<Character, Boolean> map = new HashMap();
+        Map<Character, Boolean> map = new HashMap<>();
 
         CharacterIterator iterator = new StringCharacterIterator(str);
 
